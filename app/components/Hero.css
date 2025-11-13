@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  padding-top: 80px; /* Add padding to push content down */
 }
 
 .hero-background {
@@ -330,6 +331,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 60px; /* Adjust padding for smaller screens */
+  }
+
   .hero-title {
     font-size: 2rem;
   }
