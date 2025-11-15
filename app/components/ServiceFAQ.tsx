@@ -1,6 +1,7 @@
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 import './ServiceFAQ.css';
 
 const ServiceFAQ = () => {
@@ -191,13 +192,15 @@ const ServiceFAQ = () => {
         >
           <h3>Still have questions?</h3>
           <p>We're here to help! Contact us for more information.</p>
-          <motion.button
-            className="cta-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact Us
-          </motion.button>
+          <Link href="/contact">
+            <motion.button
+              className="cta-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Us
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

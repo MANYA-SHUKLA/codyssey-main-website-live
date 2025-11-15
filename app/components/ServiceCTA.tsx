@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './ServiceCTA.css';
 
 const ServiceCTA = () => {
@@ -50,20 +51,24 @@ const ServiceCTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.button
-              className="cta-button primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Project
-            </motion.button>
-            <motion.button
-              className="cta-button secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Schedule Consultation
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                className="cta-button primary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Start Your Project
+              </motion.button>
+            </Link>
+            <Link href="/contact">
+              <motion.button
+                className="cta-button secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Schedule Consultation
+              </motion.button>
+            </Link>
           </motion.div>
           
           <motion.div
