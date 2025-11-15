@@ -17,22 +17,14 @@ const FeaturedCaseStudies = () => {
     },
     {
       id: 2,
-      title: 'Healthcare Dashboard',
-      description: 'Developed a comprehensive healthcare management system with patient tracking and analytics.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop',
+      title: 'Campaign Wala Project',
+      description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
+      image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
       category: 'SaaS Application',
       results: ['+300% Efficiency', '99.9% Uptime'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
-    {
-      id: 3,
-      title: 'FinTech Mobile App',
-      description: 'Created a secure mobile banking application with biometric authentication and real-time transactions.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop',
-      category: 'Mobile Development',
-      results: ['+500K Users', '4.8★ Rating'],
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
-    }
+   
   ];
 
   const scrollToSection = (sectionId: string) => {

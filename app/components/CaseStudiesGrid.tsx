@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 import './CaseStudiesGrid.css';
 
 const CaseStudiesGrid = () => {
@@ -18,58 +19,18 @@ const CaseStudiesGrid = () => {
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
-      id: 'ecommerce-platform',
-      title: 'Modern E-Commerce Platform',
-      description: 'A scalable e-commerce solution with real-time inventory management and secure payment integration.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=400&fit=crop',
-      industry: 'E-commerce',
-      duration: '12 weeks',
-      results: ['+200% Sales', '+45% Conversion', '2s Load Time'],
+        id: 'Campaign Wala Project',
+      title: 'Campaign Wala Project',
+      description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
+       image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
+      industry: 'SaaS Application',
+      duration: '7 weeks',
+    results: ['+300% Efficiency', '99.9% Uptime'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
-    {
-      id: 'fitness-mobile-app',
-      title: 'Fitness Tracking Mobile App',
-      description: 'A cross-platform fitness app with workout plans, progress tracking, and social features.',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=400&fit=crop',
-      industry: 'Fitness',
-      duration: '10 weeks',
-      results: ['+500K Users', '4.8★ Rating', '+40% Engagement'],
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
-    },
-    {
-      id: 'education-platform',
-      title: 'Online Learning Platform',
-      description: 'An interactive education platform with video courses, quizzes, and progress tracking.',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=400&fit=crop',
-      industry: 'Education',
-      duration: '14 weeks',
-      results: ['+50 Courses', '10K+ Students', '95% Completion'],
-      gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
-    },
-    {
-      id: 'fintech-dashboard',
-      title: 'FinTech Analytics Dashboard',
-      description: 'A real-time financial analytics dashboard with investment tracking and market insights.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=400&fit=crop',
-      industry: 'FinTech',
-      duration: '16 weeks',
-      results: ['+150% Revenue', 'Real-time Data', '99.95% Uptime'],
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
-    },
-    {
-      id: 'real-estate-portal',
-      title: 'Real Estate Portal',
-      description: 'A property listing platform with advanced search, virtual tours, and agent management.',
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=400&fit=crop',
-      industry: 'Real Estate',
-      duration: '9 weeks',
-      results: ['+300 Listings', '2M+ Views', '+75% Leads'],
-      gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
-    }
   ];
 
-  const industries = ['all', 'Cafes', 'E-commerce', 'Fitness', 'Education', 'FinTech', 'Real Estate'];
+  const industries = ['all', 'Cafes', 'SaaS Application'];
 
   const filteredStudies = activeFilter === 'all' 
     ? caseStudies 
@@ -170,13 +131,15 @@ const CaseStudiesGrid = () => {
           viewport={{ once: true }}
         >
           <p>Interested in seeing more of our work?</p>
-          <motion.button
-            className="cta-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact Us for More Examples
-          </motion.button>
+          <Link href="/contact">
+            <motion.button
+              className="cta-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Us for More Examples
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

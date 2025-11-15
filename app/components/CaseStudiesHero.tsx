@@ -53,7 +53,7 @@ const CaseStudiesHero = () => {
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">100%</div>
+              <div className="stat-number">99%</div>
               <div className="stat-label">Client Satisfaction</div>
             </div>
             <div className="stat-item">
