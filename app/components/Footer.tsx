@@ -8,17 +8,34 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubscribed(true);
-      setEmail('');
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setIsSubscribed(true);
+        setEmail('');
+      } else {
+        const data = await response.json();
+        setError(data.error || 'Failed to subscribe. Please try again.');
+      }
+    } catch (error) {
+      setError('Network error. Please check your connection and try again.');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const currentYear = new Date().getFullYear();
@@ -46,7 +63,13 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
               >
                 <div className="success-icon">🎉</div>
-                <p>Thank you for subscribing! You'll receive our updates soon.</p>
+                <div>
+                  <p className="success-title">Welcome to the CODYSSEY Community!</p>
+                  <p className="success-description">
+                    Thank you for subscribing! We've sent a confirmation email to your inbox. 
+                    Get ready for valuable insights and updates.
+                  </p>
+                </div>
               </motion.div>
             ) : (
               <form className="newsletter-form" onSubmit={handleNewsletterSubmit}>
@@ -58,6 +81,7 @@ const Footer = () => {
                     placeholder="Enter your email address"
                     required
                     className="newsletter-input"
+                    disabled={isSubmitting}
                   />
                   <motion.button
                     type="submit"
@@ -67,14 +91,27 @@ const Footer = () => {
                     whileTap={{ scale: isSubmitting ? 1 : 0.95 }}
                   >
                     {isSubmitting ? (
-                      <div className="spinner"></div>
+                      <>
+                        <div className="spinner"></div>
+                        Subscribing...
+                      </>
                     ) : (
-                      'Subscribe'
+                      'Subscribe Now'
                     )}
                   </motion.button>
                 </div>
+                {error && (
+                  <motion.p
+                    className="error-message"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {error}
+                  </motion.p>
+                )}
                 <p className="newsletter-note">
-                  We respect your privacy. Unsubscribe at any time.
+                  We respect your privacy. Unsubscribe at any time. No spam, ever.
                 </p>
               </form>
             )}
@@ -122,7 +159,6 @@ const Footer = () => {
               <ul>
                 <li><Link href="/services">Web Development</Link></li>
                 <li><Link href="/services">E-Commerce</Link></li>
-              
                 <li><Link href="/services">UI/UX Design</Link></li>
                 <li><Link href="/services">API Development</Link></li>
               </ul>
@@ -141,7 +177,6 @@ const Footer = () => {
                 <li><Link href="/case-studies">Case Studies</Link></li>
                 <li><Link href="/services">Services</Link></li>
                 <li><Link href="/careers">Book your Free Consultation</Link></li>
-       
               </ul>
             </motion.div>
 
