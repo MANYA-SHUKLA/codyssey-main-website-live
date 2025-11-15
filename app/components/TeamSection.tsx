@@ -130,23 +130,6 @@ const TeamSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="team-cta"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <p>Want to join our growing team?</p>
-          <motion.button
-            className="cta-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Careers
-          </motion.button>
-        </motion.div>
       </div>
     </section>
   );

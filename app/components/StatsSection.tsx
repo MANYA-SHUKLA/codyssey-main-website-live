@@ -41,7 +41,7 @@ const StatsSection = () => {
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
-      number: 8,
+      number: 3,
       label: 'Industries Served',
       icon: '🏢',
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
