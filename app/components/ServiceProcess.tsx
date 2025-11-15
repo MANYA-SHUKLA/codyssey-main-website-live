@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './ServiceProcess.css';
 
 const ServiceProcess = () => {
@@ -136,13 +137,15 @@ const ServiceProcess = () => {
           <div className="cta-content">
             <h3>Ready to Start Your Project?</h3>
             <p>Let's discuss your requirements and begin the journey to success.</p>
-            <motion.button
-              className="cta-button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Project
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                className="cta-button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Start Your Project
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>
