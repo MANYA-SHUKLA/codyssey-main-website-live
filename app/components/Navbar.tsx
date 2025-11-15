@@ -36,19 +36,21 @@ const Navbar = () => {
       transition={{ duration: 0.6 }}
     >
       <div className="nav-container">
-        <motion.div 
-          className="nav-logo"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <div className="logo-wrapper">
-            <div className="logo-icon">
-              <div className="logo-circle"></div>
-              <div className="logo-code">{'</>'}</div>
+        <Link href="/">
+          <motion.div 
+            className="nav-logo"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="logo-wrapper">
+              <div className="logo-icon">
+                <div className="logo-circle"></div>
+                <div className="logo-code">{'</>'}</div>
+              </div>
+              <span className="logo-text">CODYSSEY</span>
             </div>
-            <span className="logo-text">CODYSSEY</span>
-          </div>
-        </motion.div>
+          </motion.div>
+        </Link>
 
         <div className="nav-links">
           {navItems.map((item) => (

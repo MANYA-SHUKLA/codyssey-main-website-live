@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Link from 'next/link';
 import './CaseStudiesGrid.css';
 
 const CaseStudiesGrid = () => {
@@ -9,13 +8,13 @@ const CaseStudiesGrid = () => {
 
   const caseStudies = [
     {
-      id: 'healthcare-dashboard',
-      title: 'Healthcare Management Dashboard',
-      description: 'A comprehensive healthcare management system with patient tracking, appointment scheduling, and analytics.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=400&fit=crop',
-      industry: 'Healthcare',
-      duration: '8 weeks',
-      results: ['+300% Efficiency', '99.9% Uptime', '+200 Patients/Day'],
+      id: 'Foodiess Cafe Website',
+      title: 'Foodiess Cafe Website',
+      description: 'A comprehensive website for Foodiess Cafe with online booking, menu management, and customer reviews.',
+      image: 'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
+      industry: 'Cafes',
+      duration: '2 weeks',
+      results: ['+300% Efficiency', '99.9% Uptime', '+200 Orders/Day'],
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
@@ -70,7 +69,7 @@ const CaseStudiesGrid = () => {
     }
   ];
 
-  const industries = ['all', 'Healthcare', 'E-commerce', 'Fitness', 'Education', 'FinTech', 'Real Estate'];
+  const industries = ['all', 'Cafes', 'E-commerce', 'Fitness', 'Education', 'FinTech', 'Real Estate'];
 
   const filteredStudies = activeFilter === 'all' 
     ? caseStudies 
@@ -127,46 +126,43 @@ const CaseStudiesGrid = () => {
               viewport={{ once: true }}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
-              <Link href={`/case-studies/${study.id}`} className="case-study-link">
-                <div className="case-study-image">
-                  <img src={study.image} alt={study.title} />
-                  <div 
-                    className="case-study-overlay"
-                    style={{ background: study.gradient }}
-                  ></div>
-                  <div className="case-study-industry">{study.industry}</div>
+              <div className="case-study-image">
+                <img src={study.image} alt={study.title} />
+                <div 
+                  className="case-study-overlay"
+                  style={{ background: study.gradient }}
+                ></div>
+                <div className="case-study-industry">{study.industry}</div>
+              </div>
+              
+              <div className="case-study-content">
+                <h3 className="case-study-title">{study.title}</h3>
+                <p className="case-study-description">{study.description}</p>
+                
+                <div className="case-study-meta">
+                  <div className="meta-item">
+                    <span className="meta-label">Duration:</span>
+                    <span className="meta-value">{study.duration}</span>
+                  </div>
+                </div>
+                  
+                
+                <div className="case-study-results">
+                  {study.results.map((result, idx) => (
+                    <span key={idx} className="result-tag">
+                      {result}
+                    </span>
+                  ))}
                 </div>
                 
-                <div className="case-study-content">
-                  <h3 className="case-study-title">{study.title}</h3>
-                  <p className="case-study-description">{study.description}</p>
-                  
-                  <div className="case-study-meta">
-                    <div className="meta-item">
-                      <span className="meta-label">Duration:</span>
-                      <span className="meta-value">{study.duration}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="case-study-results">
-                    {study.results.map((result, idx) => (
-                      <span key={idx} className="result-tag">
-                        {result}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="case-study-cta">
-                    <span className="cta-text">View Case Study</span>
-                    <span className="cta-arrow">→</span>
-                  </div>
+                <div className="case-study-cta">
+                  <span className="cta-text">View Case Study</span>
+                  <span className="cta-arrow">→</span>
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
-        </div>
-
-        <motion.div
+        </div>        <motion.div
           className="grid-cta"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

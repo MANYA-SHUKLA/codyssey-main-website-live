@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './Hero.css';
 
 const Hero = () => {
@@ -54,22 +55,24 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.button 
-              className="hero-cta-primary"
-              onClick={() => scrollToSection('case-studies')}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Journey
-            </motion.button>
-            <motion.button 
-              className="hero-cta-secondary"
-              onClick={() => scrollToSection('services')}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View Our Work
-            </motion.button>
+            <Link href="/contact">
+              <motion.button 
+                className="hero-cta-primary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Start Your Journey
+              </motion.button>
+            </Link>
+            <Link href="/case-studies">
+              <motion.button 
+                className="hero-cta-secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View Our Work
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
         

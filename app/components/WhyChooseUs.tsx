@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './WhyChooseUs.css';
 
 const WhyChooseUs = () => {
@@ -95,13 +96,15 @@ const WhyChooseUs = () => {
           <div className="expertise-content">
             <h3>Ready to Start Your Project?</h3>
             <p>Let's discuss how we can bring your ideas to life with our expertise.</p>
-            <motion.button
-              className="cta-button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get Started Today
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                className="cta-button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get Started Today
+              </motion.button>
+            </Link>
           </div>
           <div className="expertise-visual">
             <div className="floating-tech">

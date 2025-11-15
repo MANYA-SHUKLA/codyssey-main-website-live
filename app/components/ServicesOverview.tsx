@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './ServicesOverview.css';
 
 const ServicesOverview = () => {
@@ -96,14 +97,15 @@ const ServicesOverview = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <motion.button
-            className="explore-button"
-            onClick={() => scrollToSection('services')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Explore Full Services →
-          </motion.button>
+          <Link href="/services">
+            <motion.button
+              className="explore-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Explore Full Services →
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

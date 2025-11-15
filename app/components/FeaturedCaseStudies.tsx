@@ -1,16 +1,18 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './FeaturedCaseStudies.css';
 
 const FeaturedCaseStudies = () => {
   const caseStudies = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Built a scalable e-commerce solution with real-time inventory management and payment integration.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      category: 'Web Development',
-      results: ['+200% Sales', '+45% Conversion'],
+     {
+      id: 'Foodiess Cafe Website',
+      title: 'Foodiess Cafe Website',
+      description: 'A comprehensive website for Foodiess Cafe with online booking, menu management, and customer reviews.',
+      image: 'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
+      category: 'Cafes',
+    
+      results: ['+300% Efficiency', '99.9% Uptime', '+200 Orders/Day'],
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
@@ -105,14 +107,15 @@ const FeaturedCaseStudies = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <motion.button
-            className="view-all-button"
-            onClick={() => scrollToSection('case-studies')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View All Case Studies
-          </motion.button>
+          <Link href="/case-studies">
+            <motion.button
+              className="view-all-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View All Case Studies
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
