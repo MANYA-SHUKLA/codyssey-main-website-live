@@ -4,7 +4,6 @@ import VisionMission from '../components/VisionMission';
 import Philosophy from '../components/Philosophy';
 import TeamSection from '../components/TeamSection';
 import StatsSection from '../components/StatsSection';
-import GlobalPresence from '../components/GlobalPresence';
 
 export default function About() {
   return (
@@ -15,7 +14,6 @@ export default function About() {
       <Philosophy />
       <TeamSection />
       <StatsSection />
-      <GlobalPresence />
     </main>
   );
 }
