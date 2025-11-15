@@ -9,7 +9,7 @@ const CaseStudiesGrid = () => {
 
   const caseStudies = [
     {
-      id: 'Foodiess Cafe Website',
+      id: 'foodiess-cafe-website',
       title: 'Foodiess Cafe Website',
       description: 'A comprehensive website for Foodiess Cafe with online booking, menu management, and customer reviews.',
       image: 'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
@@ -19,7 +19,7 @@ const CaseStudiesGrid = () => {
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
-        id: 'Campaign Wala Project',
+      id: 'campaign-wala-project',
       title: 'Campaign Wala Project',
       description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
        image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
