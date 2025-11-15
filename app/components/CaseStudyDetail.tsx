@@ -14,7 +14,7 @@ interface CaseStudy {
   industry: string;
   duration: string;
   team: string[];
-  results: Record<string, string | undefined>;
+  results: Record<string, string>;
   techStack: {
     frontend: string[];
     backend: string[];
@@ -36,10 +36,13 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
       {/* Hero Section */}
       <section className="case-study-hero">
         <div className="case-study-hero-background">
-          <div 
-            className="hero-gradient"
-            style={{ background: study.gradient }}
-          ></div>
+          <div className="hero-gradient-1"></div>
+          <div className="hero-gradient-2"></div>
+          <div className="floating-shapes">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className={`shape shape-${i + 1}`}></div>
+            ))}
+          </div>
         </div>
         
         <div className="container">
@@ -97,6 +100,19 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
       {/* Overview Section */}
       <section className="case-study-section overview-section">
         <div className="container">
+          <motion.div
+            className="section-header"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="section-title">Project Overview</h2>
+            <p className="section-subtitle">
+              A comprehensive look at the project goals and achievements
+            </p>
+          </motion.div>
+
           <div className="section-grid">
             <motion.div
               className="section-content"
@@ -105,64 +121,97 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2>Project Overview</h2>
-              <p>{study.overview}</p>
+              <div className="content-block">
+                <h3>The Vision</h3>
+                <p>{study.overview}</p>
+              </div>
             </motion.div>
             
             <motion.div
-              className="section-image"
+              className="section-visual"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <img src={study.image} alt={study.title} />
+              <div className="visual-container">
+                <img src={study.image} alt={study.title} className="main-image" />
+                <div className="visual-overlay" style={{ background: study.gradient }}></div>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Problem & Approach Section */}
-      <section className="case-study-section problem-approach-section">
+      {/* Problem & Solution Section */}
+      <section className="case-study-section problem-solution-section">
         <div className="container">
-          <div className="columns-grid">
+          <div className="problem-solution-grid">
             <motion.div
-              className="column"
+              className="problem-column"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3>The Challenge</h3>
-              <p>{study.problem}</p>
+              <div className="column-header">
+                <div className="column-icon">🎯</div>
+                <h3>The Challenge</h3>
+              </div>
+              <p className="column-description">{study.problem}</p>
               
               <div className="challenges-list">
                 <h4>Key Challenges:</h4>
-                <ul>
+                <div className="challenges-grid">
                   {study.challenges.map((challenge, index) => (
-                    <li key={index}>{challenge}</li>
+                    <motion.div
+                      key={index}
+                      className="challenge-item"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                    >
+                      <div className="challenge-number">0{index + 1}</div>
+                      <p>{challenge}</p>
+                    </motion.div>
                   ))}
-                </ul>
+                </div>
               </div>
             </motion.div>
-            
+
             <motion.div
-              className="column"
+              className="solution-column"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3>Our Approach</h3>
-              <p>{study.approach}</p>
+              <div className="column-header">
+                <div className="column-icon">💡</div>
+                <h3>Our Solution</h3>
+              </div>
+              <p className="column-description">{study.approach}</p>
               
               <div className="solutions-list">
-                <h4>Solutions Implemented:</h4>
-                <ul>
+                <h4>Innovative Solutions:</h4>
+                <div className="solutions-grid">
                   {study.solutions.map((solution, index) => (
-                    <li key={index}>{solution}</li>
+                    <motion.div
+                      key={index}
+                      className="solution-item"
+                      initial={{ opacity: 0, x: 50 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{ x: 10, transition: { duration: 0.3 } }}
+                    >
+                      <div className="solution-check">✓</div>
+                      <p>{solution}</p>
+                    </motion.div>
                   ))}
-                </ul>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -179,11 +228,13 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2>Results & Impact</h2>
-            <p>Measurable outcomes that made a difference</p>
+            <h2 className="section-title">Remarkable Results</h2>
+            <p className="section-subtitle">
+              Measurable outcomes that transformed the business
+            </p>
           </motion.div>
 
-          <div className="results-grid">
+          <div className="results-showcase">
             {Object.entries(study.results).map(([key, value], index) => (
               <motion.div
                 key={key}
@@ -194,6 +245,7 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               >
+                <div className="result-glow" style={{ background: study.gradient }}></div>
                 <div 
                   className="result-value"
                   style={{ background: study.gradient }}
@@ -202,6 +254,9 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
                 </div>
                 <div className="result-label">
                   {key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1')}
+                </div>
+                <div className="result-description">
+                  Significant improvement in {key.replace(/([A-Z])/g, ' $1').toLowerCase()}
                 </div>
               </motion.div>
             ))}
@@ -219,22 +274,37 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2>Technology Stack</h2>
-            <p>Tools and technologies that powered the solution</p>
+            <h2 className="section-title">Technology Stack</h2>
+            <p className="section-subtitle">
+              Powerful tools and technologies that brought the vision to life
+            </p>
           </motion.div>
 
-          <div className="tech-grid">
+          <div className="tech-showcase">
             <motion.div
               className="tech-category"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3>Frontend</h3>
+              <div className="tech-category-header">
+                <div className="tech-icon">⚛️</div>
+                <h3>Frontend</h3>
+              </div>
               <div className="tech-tags">
                 {study.techStack.frontend.map((tech, index) => (
-                  <span key={tech} className="tech-tag">{tech}</span>
+                  <motion.span
+                    key={tech}
+                    className="tech-tag"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  >
+                    {tech}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
@@ -246,25 +316,51 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3>Backend</h3>
+              <div className="tech-category-header">
+                <div className="tech-icon">🔧</div>
+                <h3>Backend</h3>
+              </div>
               <div className="tech-tags">
                 {study.techStack.backend.map((tech, index) => (
-                  <span key={tech} className="tech-tag">{tech}</span>
+                  <motion.span
+                    key={tech}
+                    className="tech-tag"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  >
+                    {tech}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
             
             <motion.div
               className="tech-category"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h3>Tools & Services</h3>
+              <div className="tech-category-header">
+                <div className="tech-icon">🛠️</div>
+                <h3>Tools & Services</h3>
+              </div>
               <div className="tech-tags">
                 {study.techStack.tools.map((tech, index) => (
-                  <span key={tech} className="tech-tag">{tech}</span>
+                  <motion.span
+                    key={tech}
+                    className="tech-tag"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  >
+                    {tech}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
@@ -282,11 +378,13 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2>UI/UX Showcase</h2>
-            <p>Visual highlights from the project</p>
+            <h2 className="section-title">Project Gallery</h2>
+            <p className="section-subtitle">
+              Visual journey through the project development and final outcome
+            </p>
           </motion.div>
 
-          <div className="gallery-grid">
+          <div className="gallery-showcase">
             {study.gallery.map((image, index) => (
               <motion.div
                 key={index}
@@ -297,7 +395,15 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               >
-                <img src={image} alt={`${study.title} showcase ${index + 1}`} />
+                <div className="gallery-image-container">
+                  <img src={image} alt={`${study.title} showcase ${index + 1}`} />
+                  <div className="gallery-overlay" style={{ background: study.gradient }}>
+                    <span className="view-text">View</span>
+                  </div>
+                </div>
+                <div className="gallery-caption">
+                  Project Showcase {index + 1}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -306,6 +412,16 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
 
       {/* CTA Section */}
       <section className="case-study-cta">
+        <div className="case-study-cta-background">
+          <div className="cta-gradient-1"></div>
+          <div className="cta-gradient-2"></div>
+          <div className="floating-elements">
+            <div className="element element-1">🚀</div>
+            <div className="element element-2">💡</div>
+            <div className="element element-3">🌟</div>
+          </div>
+        </div>
+        
         <div className="container">
           <motion.div
             className="cta-content"
@@ -314,15 +430,50 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2>Have an idea? Start your journey with us.</h2>
-            <p>Ready to transform your vision into a successful digital product?</p>
-            <motion.button
-              className="cta-button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <motion.h2
+              className="cta-title"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Start Your Project
-            </motion.button>
+              Ready to Create Your
+              <span className="gradient-text"> Success Story?</span>
+            </motion.h2>
+            
+            <motion.p
+              className="cta-subtitle"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Let's discuss how we can transform your business with innovative digital solutions.
+            </motion.p>
+            
+            <motion.div
+              className="cta-buttons"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link href="/contact">
+                <motion.button
+                  className="cta-button primary"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Start Your Project
+                </motion.button>
+              </Link>
+              <Link href="/case-studies">
+                <motion.button
+                  className="cta-button secondary"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View More Case Studies
+                </motion.button>
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>

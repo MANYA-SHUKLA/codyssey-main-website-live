@@ -8,16 +8,24 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function CaseStudyPage({ params }: PageProps) {
-  const study = caseStudies.find(s => s.id === params.id);
+export default async function CaseStudyPage({ params }: PageProps) {
+  const { id } = await params;
+  const study = caseStudies.find(s => s.id === id);
 
   if (!study) {
-    return <div>Case study not found</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Case Study Not Found</h1>
+          <p className="text-gray-400">The case study you're looking for doesn't exist.</p>
+        </div>
+      </div>
+    );
   }
 
   return <CaseStudyDetail study={study} />;
