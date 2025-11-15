@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 import './ServicesList.css';
 
 const ServicesList = () => {
@@ -11,7 +12,7 @@ const ServicesList = () => {
       id: 1,
       title: 'Website Development',
       icon: '🌐',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
+      image: 'https://mojodesign.io/wp-content/uploads/2023/12/Screenshot_7.jpeg',
       description: 'Custom, responsive websites built with modern technologies to establish your digital presence.',
       features: [
         'Responsive Design',
@@ -26,7 +27,7 @@ const ServicesList = () => {
       id: 2,
       title: 'E-Commerce Development',
       icon: '🛒',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
+      image: 'https://infostride.com/wp-content/uploads/2024/01/How-Much-Does-eCommerce-Website-Development-Cost.png',
       description: 'Complete online store solutions with secure payment integration and inventory management.',
       features: [
         'Payment Gateway Integration',
@@ -41,7 +42,7 @@ const ServicesList = () => {
       id: 3,
       title: 'Web Applications / SaaS',
       icon: '⚡',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
+      image: 'https://flatlogic.com/blog/wp-content/uploads/2025/08/Screenshot-2025-08-14-at-09.56.20-1024x690.png',
       description: 'Scalable web applications and Software-as-a-Service platforms for business automation.',
       features: [
         'Scalable Architecture',
@@ -56,7 +57,7 @@ const ServicesList = () => {
       id: 4,
       title: 'UI/UX Design',
       icon: '🎨',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
+      image: 'https://www.images.cybrosys.com/css/assets/populor/courses-7.jpg',
       description: 'User-centered design that creates intuitive, engaging, and beautiful digital experiences.',
       features: [
         'User Research',
@@ -71,7 +72,7 @@ const ServicesList = () => {
       id: 5,
       title: 'Portfolio Websites',
       icon: '📱',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop',
+      image: 'https://cdn.dribbble.com/userupload/13678195/file/original-93399428a28cabc76bb086160c4a4873.jpg',
       description: 'Stunning portfolio websites to showcase your work and attract potential clients.',
       features: [
         'Gallery Layouts',
@@ -86,7 +87,7 @@ const ServicesList = () => {
       id: 6,
       title: 'Business Websites',
       icon: '🏢',
-      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500&h=300&fit=crop',
+      image: 'https://uicreative.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2019/11/23140751/website-template-business-marketing-1024x683.jpg',
       description: 'Professional business websites that build credibility and drive customer engagement.',
       features: [
         'Service Pages',
@@ -101,7 +102,7 @@ const ServicesList = () => {
       id: 7,
       title: 'API Development',
       icon: '🔧',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop',
+      image: 'https://www.astera.com/wp-content/uploads/2023/02/Async-API.png',
       description: 'Robust RESTful and GraphQL APIs to power your applications and enable integrations.',
       features: [
         'RESTful & GraphQL',
@@ -116,7 +117,7 @@ const ServicesList = () => {
       id: 8,
       title: 'Maintenance & Optimization',
       icon: '🔄',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      image: 'https://www.khangtruongthinh.com/media/uploads/post/ec03a330-4607-499a-92ae-40da3d32744e.png',
       description: 'Ongoing support, maintenance, and optimization to keep your applications running smoothly.',
       features: [
         'Performance Optimization',
@@ -212,13 +213,15 @@ const ServicesList = () => {
                   </div>
                 </div>
                 
-                <motion.button
-                  className="service-cta"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Get This Service
-                </motion.button>
+                <Link href="/contact">
+                  <motion.button
+                    className="service-cta"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Get This Service
+                  </motion.button>
+                </Link>
               </div>
             </motion.div>
           </div>

@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './ServiceUseCases.css';
 
 const ServiceUseCases = () => {
@@ -136,13 +137,15 @@ const ServiceUseCases = () => {
         >
           <h3>Have a Specific Use Case in Mind?</h3>
           <p>We specialize in custom solutions for unique business requirements.</p>
-          <motion.button
-            className="cta-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Discuss Your Project
-          </motion.button>
+          <Link href="/contact">
+            <motion.button
+              className="cta-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Discuss Your Project
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
