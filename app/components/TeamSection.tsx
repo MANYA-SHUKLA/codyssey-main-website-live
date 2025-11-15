@@ -20,7 +20,7 @@ const TeamSection = () => {
       name: 'Manya Shukla',
       role: 'Team Lead - Tech & Operations',
       image: 'https://static.vecteezy.com/system/resources/thumbnails/038/962/461/small/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg',
-      description: 'Full-stack developer specializing in scalable applications. Ensures smooth project execution and technical excellence.',
+      description: 'Software Developer specializing in building scalable, high-performance applications. Ensures smooth project execution and technical excellence.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment', 'Project Management'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
@@ -30,7 +30,7 @@ const TeamSection = () => {
       }
     },
     {
-      name: 'Afrida Asad',
+      name: 'Afreeda Azad',
       role: ' Developer & Testing Specialist',
       image: 'https://img.freepik.com/free-photo/medium-shot-woman-posing-indoors_23-2149915935.jpg',
       description: 'Testing specialist with expertise in frontend development and user experience design. Creates beautiful, functional interfaces.',
@@ -41,7 +41,20 @@ const TeamSection = () => {
  portfolio: '#',
         github: '#'
       }
-    }
+    },
+      {
+      name: 'Rajkumar Yogi',
+      role: 'Software Engineer',
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/053/630/733/small/a-man-in-a-suit-and-tie-standing-with-his-arms-crossed-photo.jpeg',
+      description: 'Software Developer with a strong foundation in modern technologies and best coding practices.',
+      skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      social: {
+        linkedin: '#',
+        portfolio: '#',
+        github: '#'
+      }
+    },
   ];
 
   return (
