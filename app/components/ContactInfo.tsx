@@ -8,8 +8,8 @@ const ContactInfo = () => {
       icon: '📧',
       title: 'Email Us',
       description: 'Send us an email anytime',
-      value: 'shuklamanya99@gmail.com',
-      link: 'mailto:shuklamanya99@gmail.com',
+      value: 'Info@codyssey.services',
+      link: 'mailto:Info@codysseyservices',
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {

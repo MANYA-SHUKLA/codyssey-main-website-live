@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import '../../styles/TermsOfService.css';
+import '../components/TermsOfService.css';
 
 const TermsOfService = () => {
   return (
