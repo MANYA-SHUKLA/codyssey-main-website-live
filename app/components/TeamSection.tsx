@@ -45,7 +45,7 @@ const TeamSection = () => {
       {
       name: 'Rajkumar Yogi',
       role: 'Software Engineer',
-      image: 'https://static.vecteezy.com/system/resources/thumbnails/053/630/733/small/a-man-in-a-suit-and-tie-standing-with-his-arms-crossed-photo.jpeg',
+      image: 'https://rajkumaryogi.vercel.app/static/media/Photo_Pass.54eb909dfcd512176872.JPG',
       description: 'Software Developer with a strong foundation in modern technologies and best coding practices.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
