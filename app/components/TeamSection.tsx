@@ -19,7 +19,7 @@ const TeamSection = () => {
     {
       name: 'Manya Shukla',
       role: 'Team Lead - Tech & Operations',
-      image: 'public\assets\teams\manya.jpeg',
+  image: '/assets/teams/manya.jpeg',
       description: 'Software Developer specializing in building scalable, high-performance applications. Ensures smooth project execution and technical excellence.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment', 'Project Management'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
