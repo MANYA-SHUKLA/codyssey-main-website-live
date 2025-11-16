@@ -198,7 +198,7 @@ const Footer = () => {
             >
               <h4>Support</h4>
               <ul>
-                <li><Link href="/help">Help Center</Link></li>
+                <li><Link href="/contact">Help Center</Link></li>
                 <li><Link href="/privacy">Privacy Policy</Link></li>
                 <li><Link href="/terms">Terms of Service</Link></li>
                 <li><Link href="/cookies">Cookie Policy</Link></li>
