@@ -185,7 +185,7 @@ const Footer = () => {
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/case-studies">Case Studies</Link></li>
                 <li><Link href="/services">Services</Link></li>
-                <li><Link href="/careers">Book your Free Consultation</Link></li>
+                <li><Link href="/contact">Book your Free Consultation</Link></li>
               </ul>
             </motion.div>
 
