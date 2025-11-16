@@ -81,20 +81,24 @@ const ContactInfo = () => {
           <h3>Still Have Questions?</h3>
           <p>Check out our FAQ section or schedule a call with our experts.</p>
           <div className="cta-buttons">
-            <motion.button
-              className="cta-button primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View FAQ
-            </motion.button>
-            <motion.button
-              className="cta-button secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Schedule Call
-            </motion.button>
+            <a href="/services#service-faq">
+              <motion.button
+                className="cta-button primary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View FAQ
+              </motion.button>
+            </a>
+            <a href="/contact">
+              <motion.button
+                className="cta-button secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Schedule Call
+              </motion.button>
+            </a>
           </div>
         </motion.div>
       </div>
