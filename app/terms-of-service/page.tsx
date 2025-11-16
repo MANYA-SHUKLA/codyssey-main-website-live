@@ -238,8 +238,8 @@ const TermsOfService = () => {
             <div className="contact-info">
               <h3>Questions About These Terms?</h3>
               <p>If you have any questions about these Terms of Service, please contact us:</p>
-              <p>Email: legal@codyssey.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p>Email: <a href="mailto:Info@codyssey.services">Info@codyssey.services</a></p>
+              <p>Phone: <a href="tel:+918005586588">+91 800-558-6588</a></p>
             </div>
           </div>
         </motion.section>
@@ -250,7 +250,7 @@ const TermsOfService = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.3 }}
         >
-          Last updated: December 2024
+          Last updated: November 2025
         </motion.div>
       </div>
     </div>
