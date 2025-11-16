@@ -217,7 +217,7 @@ const Footer = () => {
                 <li>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>📧</span>
-                    <span>shuklamanya99@gmail.com</span>
+                    <span>Info@codyssey.services</span>
                   </div>
                 </li>
                 <li>
