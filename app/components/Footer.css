@@ -13,6 +13,14 @@
   right: 0;
   bottom: 0;
   background: radial-gradient(circle at 30% 70%, rgba(102, 126, 234, 0.05) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure footer content sits above decorative overlay */
+.footer > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .newsletter-section {
