@@ -229,7 +229,7 @@ const Footer = () => {
                 <li>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>🕒</span>
-                    <span>Within 24 hours</span>
+                    <span>Within 12 hours</span>
                   </div>
                 </li>
               </ul>
