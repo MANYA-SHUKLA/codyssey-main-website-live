@@ -162,7 +162,9 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h4>Services</h4>
+              <Link href="/services" aria-label="Go to Services page">
+                <h4>Services</h4>
+              </Link>
               <ul>
                 <li><Link href="/services">Web Development</Link></li>
                 <li><Link href="/services">E-Commerce</Link></li>
