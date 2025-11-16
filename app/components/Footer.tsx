@@ -128,13 +128,13 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="brand-logo">
+              <Link href="/" className="brand-logo" aria-label="Go to homepage">
                 <div className="logo-icon">
                   <div className="logo-circle"></div>
                   <div className="logo-code">{'</>'}</div>
                 </div>
                 <span className="logo-text">CODYSSEY</span>
-              </div>
+              </Link>
               <p className="brand-description">
                 Transforming ideas into exceptional digital experiences through 
                 innovative web solutions and cutting-edge technology.
