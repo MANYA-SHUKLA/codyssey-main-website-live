@@ -24,9 +24,9 @@ const TeamSection = () => {
       skills: ['Frontend', 'Backend', 'Database', 'Deployment', 'Project Management'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/manya-shukla99/',
         portfolio: '#',
-        github: '#'
+        github: 'https://github.com/MANYA-SHUKLA'
       }
     },
     {
@@ -37,9 +37,9 @@ const TeamSection = () => {
       skills: ['Testing', 'UI/UX', 'Frontend', 'Quality Assurance'],
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
       social: {
-        linkedin: '#',
- portfolio: '#',
-        github: '#'
+        linkedin: 'https://www.linkedin.com/in/afreedaasad',
+        portfolio: 'https://manya-shukla.vercel.app/',
+        github: 'https://github.com/afridaasad'
       }
     },
       {
@@ -50,9 +50,9 @@ const TeamSection = () => {
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
-        linkedin: '#',
-        portfolio: '#',
-        github: '#'
+        linkedin: 'https://www.linkedin.com/in/rajkumaryogi-jnu/',
+        portfolio: 'https://rajkumaryogi.vercel.app/',
+        github: 'https://github.com/Rajkumaryogi'
       }
     },
   ];
