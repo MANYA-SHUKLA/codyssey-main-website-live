@@ -23,7 +23,7 @@ const ContactInfo = () => {
     {
       icon: '📞',
       title: 'Call Us',
-      description: 'Mon - Fri from 9am to 6pm',
+      description: 'Mon - Sat from 10am to 7pm',
       value: '+91 800-558-6588',
       link: 'tel:+918005586588',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'

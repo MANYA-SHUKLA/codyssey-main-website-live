@@ -260,8 +260,8 @@ const CookiePolicy = () => {
             <div className="contact-info">
               <h3>Questions About Cookies?</h3>
               <p>If you have any questions about our use of cookies, please contact us:</p>
-              <p>Email: privacy@codyssey.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p>Email: <a href="mailto:Info@codyssey.services">Info@codyssey.services</a></p>
+              <p>Phone: <a href="tel:+918005586588">+91 800-558-6588</a></p>
             </div>
           </div>
         </motion.section>
@@ -272,7 +272,7 @@ const CookiePolicy = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
         >
-          Last updated: December 2024
+          Last updated: November 2025
         </motion.div>
       </div>
     </div>
