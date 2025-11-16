@@ -73,7 +73,7 @@ export const caseStudies: CaseStudy[] = [
     image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
     industry: 'Marketing Technology',
     duration: '8 weeks',
-    team: ['Project Manager', 'UI/UX Designer', '2 Frontend Developers', 'Backend Developer', 'QA Engineer'],
+    team: ['Project Manager', 'UI/UX Designer', '2 Frontend Developers', 'Backend Developer'],
     results: {
       'Efficiency Improvement': '+300%',
       'System Uptime': '99.9%',
