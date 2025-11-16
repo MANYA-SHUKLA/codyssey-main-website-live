@@ -12,7 +12,7 @@ const TeamSection = () => {
       skills: ['Leadership', 'Strategy', 'Architecture'],
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       social: {
-        linkedin: 'https://www.linkedin.com/in/manya-shukla99/'
+        linkedin: 'https://www.linkedin.com/in/krunal-kumar-yadav-347184396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
         
       }
     },
