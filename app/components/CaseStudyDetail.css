@@ -1,11 +1,9 @@
-/* CaseStudyDetail.css */
+
 .case-study-detail {
   background: #0a0a0a;
   color: white;
   overflow-x: hidden;
 }
-
-/* Hero Section */
 .case-study-hero {
   min-height: 100vh;
   display: flex;
