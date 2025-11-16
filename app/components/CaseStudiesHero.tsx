@@ -57,7 +57,7 @@ const CaseStudiesHero = () => {
               <div className="stat-label">Client Satisfaction</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">8+</div>
+              <div className="stat-number">3+</div>
               <div className="stat-label">Industries Served</div>
             </div>
           </motion.div>
