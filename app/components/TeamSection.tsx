@@ -19,7 +19,7 @@ const TeamSection = () => {
     {
       name: 'Manya Shukla',
       role: 'Team Lead - Tech & Operations',
-      image: 'https://avatars.githubusercontent.com/u/157141586?v=4',
+      image: 'https://photos.fife.usercontent.google.com/pw/AP1GczNPB3P6vZ1bC8K8XzzC8Q__k_HabMNNZWUsfaZHFBHly3o39F-csBcb=w481-h641-s-no-gm?authuser=0',
       description: 'Software Developer specializing in building scalable, high-performance applications. Ensures smooth project execution and technical excellence.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment', 'Project Management'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
@@ -30,9 +30,9 @@ const TeamSection = () => {
       }
     },
     {
-      name: 'Afreeda Azad',
+      name: 'Afreeda Asad',
       role: ' Developer & Testing Specialist',
-      image: 'https://img.freepik.com/free-photo/medium-shot-woman-posing-indoors_23-2149915935.jpg',
+      image: 'https://photos.fife.usercontent.google.com/pw/AP1GczN_XWSGdVhuyLQaxCz1-Pf4fAe51dMjRqtg-IfhY6YzleZdNo7UXNJJ=w511-h641-s-no-gm?authuser=0',
       description: 'Testing specialist with expertise in frontend development and user experience design. Creates beautiful, functional interfaces.',
       skills: ['Testing', 'UI/UX', 'Frontend', 'Quality Assurance'],
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
