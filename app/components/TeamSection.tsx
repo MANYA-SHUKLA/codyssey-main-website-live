@@ -32,7 +32,7 @@ const TeamSection = () => {
     {
       name: 'Afreeda Asad',
       role: ' Developer & Testing Specialist',
-      image: 'public\assets\teams\afreeda.jpg',
+   image: '/assets/teams/afreeda.jpg',
       description: 'Testing specialist with expertise in frontend development and user experience design. Creates beautiful, functional interfaces.',
       skills: ['Testing', 'UI/UX', 'Frontend', 'Quality Assurance'],
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
