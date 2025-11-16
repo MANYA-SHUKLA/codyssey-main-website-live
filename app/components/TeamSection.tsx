@@ -19,7 +19,7 @@ const TeamSection = () => {
     {
       name: 'Manya Shukla',
       role: 'Team Lead - Tech & Operations',
-      image: 'https://static.vecteezy.com/system/resources/thumbnails/038/962/461/small/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg',
+      image: 'https://avatars.githubusercontent.com/u/157141586?v=4',
       description: 'Software Developer specializing in building scalable, high-performance applications. Ensures smooth project execution and technical excellence.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment', 'Project Management'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
