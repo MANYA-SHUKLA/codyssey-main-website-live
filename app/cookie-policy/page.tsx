@@ -5,7 +5,7 @@ import '../components/CookiePolicy.css';
 
 const CookiePolicy = () => {
   const handleAcceptAll = () => {
-    // Implementation for accepting all cookies
+ 
     console.log('All cookies accepted');
   };
 
