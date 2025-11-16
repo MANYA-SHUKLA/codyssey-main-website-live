@@ -5,7 +5,7 @@ import '../components/PrivacyPolicy.css';
 const PrivacyPolicy = () => {
   return (
     <div className="legal-page">
-      {/* Hero Section */}
+
       <section className="legal-hero">
         <div className="legal-hero-background">
           <div className="legal-gradient-1"></div>
