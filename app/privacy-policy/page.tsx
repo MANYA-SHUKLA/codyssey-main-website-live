@@ -192,8 +192,8 @@ const PrivacyPolicy = () => {
             <div className="contact-info">
               <h3>Codyssey Services</h3>
               <p>For any questions about this Privacy Policy or your personal information, please contact us:</p>
-              <p>Email: privacy@codyssey.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p>Email: <a href="mailto:info@codyssey.services">info@codyssey.services</a></p>
+              <p>Phone: <a href="tel:+918005586588">+91 8005586588</a></p>
             </div>
           </div>
         </motion.section>
@@ -204,7 +204,7 @@ const PrivacyPolicy = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.1 }}
         >
-          Last updated: December 2024
+          Last updated: November 17, 2025
         </motion.div>
       </div>
     </div>
