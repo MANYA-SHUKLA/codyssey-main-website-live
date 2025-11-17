@@ -79,10 +79,11 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
+/*
 .team-card:hover .member-gradient {
   opacity: 1;
 }
+*/
 
 .member-info {
   padding: 30px;
