@@ -15,7 +15,7 @@ const CookiePolicy = () => {
   };
 
   const handleCustomSettings = () => {
-    // Implementation for custom cookie settings
+
     console.log('Custom cookie settings');
   };
 
