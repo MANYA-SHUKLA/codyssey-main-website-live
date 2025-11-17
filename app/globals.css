@@ -39,7 +39,7 @@ a {
   padding: 100px 0;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
