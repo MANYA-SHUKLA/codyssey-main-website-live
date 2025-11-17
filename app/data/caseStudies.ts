@@ -67,35 +67,37 @@ export const caseStudies: CaseStudy[] = [
     id: 'campaign-wala-project',
     title: 'Campaign Wala Project',
     description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
-    overview: 'Built a sophisticated campaign management platform that enables businesses to create, manage, and track marketing campaigns with real-time analytics and comprehensive reporting features.',
-    problem: 'Businesses struggled with fragmented campaign management across multiple platforms, lack of real-time analytics, and inefficient reporting systems. This led to poor campaign optimization and wasted marketing budgets.',
-    approach: 'We created a unified campaign management platform with drag-and-drop campaign builder, real-time analytics dashboard, and automated reporting system. The platform integrates with multiple marketing channels and provides actionable insights.',
+    overview: 'To build the most reliable fintech referral platform where anyone can earn by sharing verified financial product offers with transparent lead tracking, instant status updates, and guaranteed payouts. A platform that simplifies affiliate earnings for common users while giving financial partners high-quality, trackable conversions.',
+    problem: 'Existing referral and lead-generation platforms make the earning process confusing and unreliable. Users rarely know whether their leads are being tracked correctly, when payouts will arrive, or why a lead was rejected. Admin teams also struggle with poor tools, causing delays, manual errors, and lack of transparency. Overall, the experience lacks trust, clarity, and control.',
+    approach: 'CampaignWala delivers a transparent, end-to-end referral and lead-management ecosystem designed to regain user trust, simplify admin operations, and increase actual conversions. The platform ensures every referral is trackable, every lead is accountable, and every payout is smooth, fast, and fully verified. With a structured workflow and strong backend automation, users and admins both experience complete clarity.',
     image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
     industry: 'Marketing Technology',
     duration: '8 weeks',
     team: ['Project Manager', 'UI/UX Designer', '2 Frontend Developers', 'Backend Developer'],
     results: {
-      'Efficiency Improvement': '+300%',
-      'System Uptime': '99.9%',
-      'Campaigns Managed': '+300 Campaigns/Month',
-      'ROI Improvement': '+45%'
-    },
-    techStack: {
-      frontend: ['Next.js', 'React', 'TypeScript', 'Chart.js'],
-      backend: ['Node.js', 'Express.js', 'PostgreSQL'],
-      tools: ['Figma', 'Docker', 'AWS']
-    },
+  "Conversion Speed": "40–60% Faster",
+  "User Earnings": "2x–3x Higher",
+  "Admin Workload": "50–70% Lower",
+  "Lead Accuracy": "90%+ Error Reduction",
+  "Payout Processing": "3 times Faster",
+  "User Retention": "45–60% Boost"
+},
+ techStack: {
+  frontend: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
+  backend: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
+  tools: ['Figma', 'JWT Auth', 'Bcrypt', 'AWS S3', 'ExcelJS', 'Render', 'Vercel', 'Hostinger']
+},
     challenges: [
-      'Handling real-time data from multiple marketing platforms',
-      'Creating intuitive drag-and-drop campaign builder',
-      'Ensuring data security and user privacy',
-      'Scalable architecture for growing user base'
+      'No clear tracking system for leads or reasons for rejection',
+      'Delayed or unreliable payout processes',
+      'Weak admin tools for managing offers, users, and withdrawals',
+      'Lack of verified, trackable referral links leading to lost conversions'
     ],
     solutions: [
-      'Implemented WebSocket for real-time data updates',
-      'Built custom drag-and-drop interface with React DnD',
-      'Used encryption and secure API protocols',
-      'Designed microservices architecture for scalability'
+      'Unique trackable referral links with real-time lead status updates',
+      'Instant wallet updates and smooth, compliant withdrawal flow',
+      'Robust admin panel for managing users, offers, leads, and payouts',
+      'Complete KYC and verification system to ensure secure, trust-based operations'
     ],
     gallery: [
       'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',

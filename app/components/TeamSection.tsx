@@ -31,7 +31,7 @@ const TeamSection = () => {
     },
     {
       name: 'Afreeda Asad',
-      role: ' Developer & Testing Specialist',
+      role: ' Software Engineer & QA Analyst',
    image: '/assets/teams/afreeda.jpg',
       description: 'Testing specialist with expertise in frontend development and user experience design. Creates beautiful, functional interfaces.',
       skills: ['Testing', 'UI/UX', 'Frontend', 'Quality Assurance'],
