@@ -48,7 +48,7 @@ const CookiePolicy = () => {
         </div>
       </section>
 
-      {/* Content Section */}
+    
       <div className="legal-content">
         <motion.section
           className="legal-section"
