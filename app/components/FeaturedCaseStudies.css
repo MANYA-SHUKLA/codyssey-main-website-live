@@ -96,15 +96,11 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
-  opacity: 0;
+  opacity: 0 !important;
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.case-study-card:hover .case-study-overlay {
-  opacity: 1;
 }
 
 .case-study-category {

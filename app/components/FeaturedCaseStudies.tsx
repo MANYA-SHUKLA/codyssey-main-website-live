@@ -12,7 +12,8 @@ const FeaturedCaseStudies = () => {
       image: 'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
       category: 'Cafes',
       results: ['+300% Efficiency', '99.9% Uptime', '+200 Orders/Day'],
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      link: 'https://www.foodiescafe.shop/'
     },
     {
       id: 'campaign-wala-project',
@@ -21,7 +22,8 @@ const FeaturedCaseStudies = () => {
       image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
       category: 'SaaS Application',
       results: ['+300% Efficiency', '99.9% Uptime'],
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      link: 'https://www.campaignwala.in/'
     },
   ];
 
@@ -71,15 +73,24 @@ const FeaturedCaseStudies = () => {
                   ))}
                 </div>
                 
-                <Link href={`/case-studies/${study.id}`}>
-                  <motion.button 
-                    className="view-case-study"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    View Case Study →
-                  </motion.button>
-                </Link>
+                <div className="case-study-buttons">
+  <Link href={`/case-studies/${study.id}`} className="case-study-cta">
+    <span className="cta-text">View Case Study</span>
+    <span className="cta-arrow">→</span>
+  </Link>
+
+  {study.link && (
+    <a
+      href={study.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="case-study-external-link"
+    >
+      Visit Website →
+    </a>
+  )}
+</div>
+
               </div>
             </motion.div>
           ))}
