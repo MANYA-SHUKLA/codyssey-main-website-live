@@ -40,7 +40,7 @@ export const caseStudies: CaseStudy[] = [
       'Customer Satisfaction': '95%'
     },
     techStack: {
-      frontend: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+      frontend: ['Next.js','TypeScript', 'Tailwind CSS'],
       backend: ['Nodemailer'],
       tools: ['Figma', 'Vercel', 'Hostinger']
     },
