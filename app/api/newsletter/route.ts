@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
   try {
     const { email } = await request.json();
 
-    // Validate email
+
     if (!email || !email.includes('@')) {
       return NextResponse.json(
         { error: 'Valid email is required' },
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create transporter
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -21,8 +21,6 @@ export async function POST(request: NextRequest) {
         pass: process.env.EMAIL_PASS,
       },
     });
-
-    // Email to admin
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
       to: 'shuklamanya99@gmail.com',
@@ -73,8 +71,6 @@ export async function POST(request: NextRequest) {
         </html>
       `,
     };
-
-    // Email to user (confirmation)
     const userMailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
@@ -164,8 +160,6 @@ export async function POST(request: NextRequest) {
         </html>
       `,
     };
-
-    // Send both emails
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(userMailOptions);
 

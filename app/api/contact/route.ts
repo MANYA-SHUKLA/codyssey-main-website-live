@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // Email to admin
+
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
       to: 'shuklamanya99@gmail.com',
@@ -77,8 +77,6 @@ export async function POST(request: NextRequest) {
         </html>
       `,
     };
-
-    // Email to user (confirmation)
     const userMailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
@@ -139,7 +137,7 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    // Send both emails
+
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(userMailOptions);
 
