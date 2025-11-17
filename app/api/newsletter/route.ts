@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     });
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'shuklamanya99@gmail.com',
+      to: 'info@codyssey.services',
       subject: 'New Newsletter Subscription',
       html: `
         <!DOCTYPE html>

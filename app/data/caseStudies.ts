@@ -41,8 +41,8 @@ export const caseStudies: CaseStudy[] = [
     },
     techStack: {
       frontend: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      backend: ['Node.js', 'Express.js', 'MongoDB'],
-      tools: ['Figma', 'Vercel']
+      backend: ['Nodemailer'],
+      tools: ['Figma', 'Vercel', 'Hostinger']
     },
     challenges: [
       'Integrating real-time booking system with existing POS',
