@@ -261,7 +261,7 @@ const CookiePolicy = () => {
               <h3>Questions About Cookies?</h3>
               <p>If you have any questions about our use of cookies, please contact us:</p>
               <p>Email: <a href="mailto:Info@codyssey.services">Info@codyssey.services</a></p>
-              <p>Phone: <a href="tel:+918005586588">+91 800-558-6588</a></p>
+              <p>Phone: <a href="tel:+917634820773">+91 763-482-0773</a></p>
             </div>
           </div>
         </motion.section>

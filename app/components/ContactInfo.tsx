@@ -17,15 +17,15 @@ const ContactInfo = () => {
       title: ' Chat with Us',
       description: 'Chat with our team',
       value: 'Start Chat',
-      link: '#',
+      link: 'https://wa.me/917634820773',
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
     {
       icon: '📞',
       title: 'Call Us',
       description: 'Mon - Sat from 10am to 7pm',
-      value: '+91 800-558-6588',
-      link: 'tel:+918005586588',
+      value: '+91 76348 20773',
+      link: 'tel:+917634820773',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     },
   ];

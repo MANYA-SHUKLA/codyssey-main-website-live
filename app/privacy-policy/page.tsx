@@ -193,7 +193,7 @@ const PrivacyPolicy = () => {
               <h3>Codyssey Services</h3>
               <p>For any questions about this Privacy Policy or your personal information, please contact us:</p>
               <p>Email: <a href="mailto:info@codyssey.services">info@codyssey.services</a></p>
-              <p>Phone: <a href="tel:+918005586588">+91 8005586588</a></p>
+              <p>Phone: <a href="tel:+917634820773">+91 763-482-0773</a></p>
             </div>
           </div>
         </motion.section>

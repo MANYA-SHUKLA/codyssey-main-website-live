@@ -151,8 +151,8 @@ export async function POST(request: NextRequest) {
 
                 <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 12px;">
                   <p>CODYSSEY - Creative Journey Through Code<br>
-                  Email: shuklamanya99@gmail.com<br>
-                  <a href="https://yourdomain.com" style="color: #667eea;">www.yourdomain.com</a></p>
+                  Email: info@codyssey.services<br>
+                  <a href="https://codyssey.services" style="color: #667eea;">www.codyssey.services</a></p>
                 </div>
               </div>
             </div>

@@ -1,7 +1,5 @@
 🚀 Codyssey — Main Website
 
-Built and maintained by Manya Shukla
-
 Codyssey is a modern, performance-driven web experience designed to elevate digital presence.
 This website showcases clean UI, smooth interactions, and a strong focus on converting ideas into impactful digital solutions.
 
@@ -31,5 +29,5 @@ Modern tech and clean architecture
 
 👩‍💻 Developer
 
-Manya Shukla
+Manya Shukla & Afrida Asad
 Full Stack Developer | Next.js, React, TypeScript
