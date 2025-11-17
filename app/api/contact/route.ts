@@ -137,7 +137,7 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    // Send both emails
+
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(userMailOptions);
 
