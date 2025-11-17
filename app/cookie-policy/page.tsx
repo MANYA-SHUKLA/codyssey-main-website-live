@@ -10,7 +10,7 @@ const CookiePolicy = () => {
   };
 
   const handleEssentialOnly = () => {
-    // Implementation for essential cookies only
+ 
     console.log('Essential cookies only');
   };
 
