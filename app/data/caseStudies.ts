@@ -29,14 +29,14 @@ export const caseStudies: CaseStudy[] = [
     overview: 'Developed a modern, responsive website for Foodiess Cafe that transformed their digital presence and streamlined their operations. The platform integrates online booking, menu management, and customer review systems.',
     problem: 'Foodiess Cafe faced challenges with manual booking systems, outdated menu updates, and lack of customer engagement. Their previous website was not mobile-friendly and had poor user experience, leading to lost reservations and customer dissatisfaction.',
     approach: 'We implemented a user-centered design approach with a mobile-first strategy. The solution included a custom CMS for easy menu management, real-time booking system, and integrated review platform to enhance customer engagement.',
-    image: 'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
+    image: 'https://www.foodiescafe.shop/cozy-interior.jpg',
     industry: 'Food & Beverage',
     duration: '2 weeks',
     team: ['Project Manager', 'UI/UX Designer', 'Frontend Developer', 'Backend Developer'],
     results: {
       'Efficiency Improvement': '+300%',
       'System Uptime': '99.9%',
-      'Daily Orders': '+100 Orders/Day',
+      'Daily Orders': '100+ Orders Daily',
       'Customer Satisfaction': '95%'
     },
     techStack: {
@@ -57,9 +57,9 @@ export const caseStudies: CaseStudy[] = [
       'Used image optimization and lazy loading for performance'
     ],
     gallery: [
-      'https://imgmediagumlet.lbb.in/media/2024/11/672b4ee404855664de195884_1730891492481.jpg',
-      'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop',
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop'
+      'https://www.foodiescafe.shop/cozy-interior.jpg',
+      'https://www.foodiescafe.shop/mordern-sitting.jpg',
+      'https://www.foodiescafe.shop/warm-ambiance.jpg'
     ],
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   },
@@ -70,7 +70,7 @@ export const caseStudies: CaseStudy[] = [
     overview: 'To build the most reliable fintech referral platform where anyone can earn by sharing verified financial product offers with transparent lead tracking, instant status updates, and guaranteed payouts. A platform that simplifies affiliate earnings for common users while giving financial partners high-quality, trackable conversions.',
     problem: 'Existing referral and lead-generation platforms make the earning process confusing and unreliable. Users rarely know whether their leads are being tracked correctly, when payouts will arrive, or why a lead was rejected. Admin teams also struggle with poor tools, causing delays, manual errors, and lack of transparency. Overall, the experience lacks trust, clarity, and control.',
     approach: 'CampaignWala delivers a transparent, end-to-end referral and lead-management ecosystem designed to regain user trust, simplify admin operations, and increase actual conversions. The platform ensures every referral is trackable, every lead is accountable, and every payout is smooth, fast, and fully verified. With a structured workflow and strong backend automation, users and admins both experience complete clarity.',
-    image: 'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
+    image: 'casestudies/CW.png',
     industry: 'Marketing Technology',
     duration: '8 weeks',
     team: ['Project Manager', 'UI/UX Designer', '2 Frontend Developers', 'Backend Developer'],
@@ -100,7 +100,7 @@ export const caseStudies: CaseStudy[] = [
       'Complete KYC and verification system to ensure secure, trust-based operations'
     ],
     gallery: [
-      'https://cdn.prod.website-files.com/62722382edf1ccb5a513cf38/656eb1504bc9f3abbb5b1e2a_what-defines-a-successful-sales-campaign-key-elements-to-consider.png',
+      'casestudies/CW.png',
       'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
       'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop'
     ],

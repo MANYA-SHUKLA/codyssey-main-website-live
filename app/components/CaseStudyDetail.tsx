@@ -397,13 +397,11 @@ const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
               >
                 <div className="gallery-image-container">
                   <img src={image} alt={`${study.title} showcase ${index + 1}`} />
-                  <div className="gallery-overlay" style={{ background: study.gradient }}>
-                    <span className="view-text">View</span>
+                  <div className="gallery-overlay">
+                    
                   </div>
                 </div>
-                <div className="gallery-caption">
-                  Project Showcase {index + 1}
-                </div>
+                
               </motion.div>
             ))}
           </div>

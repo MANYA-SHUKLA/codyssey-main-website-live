@@ -177,6 +177,12 @@
   gap: 80px;
   align-items: center;
 }
+.content-block {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
 
 .content-block h3 {
   font-size: 2rem;
@@ -189,6 +195,7 @@
   font-size: 1.2rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
+  background: transparent !important;
 }
 
 .visual-container {
