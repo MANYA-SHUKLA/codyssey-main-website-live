@@ -17,7 +17,7 @@
   pointer-events: none;
 }
 
-/* Ensure footer content sits above decorative overlay */
+
 .footer > .container {
   position: relative;
   z-index: 1;
