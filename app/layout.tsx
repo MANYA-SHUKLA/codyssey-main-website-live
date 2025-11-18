@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'CODYSSEY - Creative Journey Through Code',
+  title: 'CODYSSEY',
   description: 'CODYSSEY provides all types of website solutions. A creative journey through code.',
 };
 
