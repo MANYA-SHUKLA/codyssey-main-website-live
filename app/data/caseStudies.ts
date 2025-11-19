@@ -132,10 +132,11 @@ export const caseStudies: CaseStudy[] = [
     tools: ['Figma', 'Vercel', 'Hostinger']
   },
   challenges: [
-    'No structured online identity to explain services clearly',
-    'No trust-building sections for clients or job seekers',
-    'Difficulty in presenting values, commitments, and growth model in a professional format'
-  ],
+  'No structured online identity to explain services clearly',
+  'No trust-building sections for clients or job seekers',
+  'Difficulty in presenting values, commitments, and growth model in a professional format',
+  'Difficulty building digital credibility in a trust-sensitive communication industry'
+],
   solutions: [
     'Built a modern, professional UI based on brand identity',
     'Added structured sections for values, team, clients, and society',
