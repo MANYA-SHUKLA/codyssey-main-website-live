@@ -118,8 +118,6 @@ const Footer = () => {
             )}
           </div>
         </motion.div>
-
-        {/* Main Footer Content */}
         <div className="footer-content">
           <div className="footer-grid">
             <motion.div
