@@ -254,7 +254,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>&copy; {currentYear} CODYSSEY. All rights reserved.</p>
