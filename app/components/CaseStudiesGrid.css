@@ -295,7 +295,7 @@
 .case-study-external-link {
   background: transparent;
   border: 2px solid rgba(102, 126, 234, 0.5);
-  color: #08123f;                /* BLUE text */
+  color: white;
   padding: 10px 18px;
   border-radius: 12px;
   font-weight: 600;
@@ -311,7 +311,8 @@
 }
 .case-study-cta:hover,
 .case-study-external-link:hover {
-  background: rgba(102, 126, 234, 0.1);     
+  background: rgba(102, 126, 234, 0.2);
+color: white;    
   border-color: #667eea;
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); 
   transform: translateY(-3px);

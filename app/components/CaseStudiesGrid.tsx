@@ -39,7 +39,7 @@ const CaseStudiesGrid = () => {
   duration: '1 week',
   results: ['+200% Engagement', 'Optimised Inquiry Flow'],
   gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-  link: 'https://telewave-services-live-website.vercel.app/'
+  link: 'https://www.telewaveservices.com'
 }
     // Add more case studies as needed
   ];

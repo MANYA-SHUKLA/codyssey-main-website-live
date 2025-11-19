@@ -33,7 +33,7 @@ const FeaturedCaseStudies = () => {
   category: 'Business Services',
   results: ['+200% Engagement', 'Faster Lead Inquiry Flow'],
   gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', // Option B
-  link: 'https://telewave-services-live-website.vercel.app/'
+  link: 'https://www.telewaveservices.com/'
 }
     // Add more case studies as needed
 
