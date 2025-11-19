@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        {/* Newsletter Section */}
+
         <motion.div
           className="newsletter-section"
           initial={{ opacity: 0, y: 50 }}
