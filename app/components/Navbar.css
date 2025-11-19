@@ -290,3 +290,15 @@
     color: white;
   }
 }
+
+.nav-logo-image {
+  display: block;
+  height: 45px;
+  width: auto;
+  border-radius: 30px; /* Optional if you want slightly rounded edges */
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

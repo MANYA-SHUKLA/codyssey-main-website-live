@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
 import './Footer.css';
+import Image from "next/image";
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -129,11 +130,15 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <Link href="/" className="brand-logo" aria-label="Go to homepage">
-                <div className="logo-icon">
-                  <div className="logo-circle"></div>
-                  <div className="logo-code">{'</>'}</div>
-                </div>
-                <span className="logo-text">CODYSSEY</span>
+                <Image 
+  src="/Codyssey.jpeg"
+  alt="Codyssey Logo"
+  width={60}
+  height={60}
+  className="footer-logo-image"
+/>
+<span className="logo-text">CODYSSEY</span>
+
               </Link>
               <p className="brand-description">
                 Transforming ideas into exceptional digital experiences through 

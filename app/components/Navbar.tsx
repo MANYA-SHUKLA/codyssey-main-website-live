@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import './Navbar.css';
+import Image from "next/image";
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,12 +45,17 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <div className="logo-wrapper">
-              <div className="logo-icon">
-                <div className="logo-circle"></div>
-                <div className="logo-code">{'</>'}</div>
-              </div>
-              <span className="logo-text">CODYSSEY</span>
-            </div>
+  <Image 
+    src="/Codyssey.jpeg"
+    alt="Codyssey Logo"
+    width={48}          // adjust
+    height={48}
+    className="nav-logo-image"
+    priority
+  />
+  <span className="logo-text">CODYSSEY</span>
+</div>
+
           </motion.div>
         </Link>
 

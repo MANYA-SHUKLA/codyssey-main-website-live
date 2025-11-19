@@ -398,3 +398,19 @@
     gap: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+.footer-logo-image {
+  display: block;
+  height: 55px;
+  width: auto;
+  border-radius: 30px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+>>>>>>> 4876155 (Changed Logo)
