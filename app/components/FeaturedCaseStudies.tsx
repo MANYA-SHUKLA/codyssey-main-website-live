@@ -19,12 +19,24 @@ const FeaturedCaseStudies = () => {
       id: 'campaign-wala-project',
       title: 'Campaign Wala Project',
       description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
-      image: 'casestudies/CW.png',
+      image: 'casestudies/CW.jpeg',
       category: 'SaaS Application',
       results: ['+300% Efficiency', '99.9% Uptime'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       link: 'https://www.campaignwala.in/'
     },
+    {
+  id: 'telewave-services-project',
+  title: 'Telewave Services – Business Website',
+  description: 'A professional business website built for a communication and telecalling talent company.',
+  image: 'https://www.flatworldsolutions.com/featured-images/success-story-telecalling-lead-generation-services.jpg',
+  category: 'Business Services',
+  results: ['+200% Engagement', 'Faster Lead Inquiry Flow'],
+  gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', // Option B
+  link: 'https://telewave-services-live-website.vercel.app/'
+}
+    // Add more case studies as needed
+
   ];
 
   return (
