@@ -897,3 +897,28 @@ html {
     transform: none;
   }
 }
+
+/* Prevent layout shift while images load */
+.main-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Gallery images fixed ratio */
+.gallery-image-container img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.case-study-cta {
+  width: 100%;
+  overflow: hidden;     /* prevents the right side black gap */
+}
+.case-study-cta-background {
+  width: 100%;
+}
+
+

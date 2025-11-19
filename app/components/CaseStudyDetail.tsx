@@ -32,7 +32,7 @@ interface CaseStudyDetailProps {
 
 const CaseStudyDetail = ({ study }: CaseStudyDetailProps) => {
   return (
-    <div className="case-study-detail">
+    <div className="case-study-detail" suppressHydrationWarning={true}>
       {/* Hero Section */}
       <section className="case-study-hero">
         <div className="case-study-hero-background">
