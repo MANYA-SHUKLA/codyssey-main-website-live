@@ -4,7 +4,6 @@ import VisionMission from '../components/VisionMission';
 import Philosophy from '../components/Philosophy';
 import TeamSection from '../components/TeamSection';
 import StatsSection from '../components/StatsSection';
-
 export default function About() {
   return (
     <main>
