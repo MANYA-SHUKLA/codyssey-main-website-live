@@ -91,7 +91,7 @@ Restart the dev server after adding or changing environment variables.
 - tsconfig.json — TypeScript configuration
 - package.json / package-lock.json — dependencies & scripts
 
-(Adjust the above if you expand the project structure.)
+
 
 ## Code quality & formatting
 - ESLint is configured to help find and fix problems. Run:
@@ -118,7 +118,7 @@ Contributions are welcome. Suggested steps:
 Be sure to follow existing code style and commit message conventions.
 
 ## License & credits
-No license file is included in this repository. Add a LICENSE file (MIT, Apache-2.0, etc.) if you intend to open-source the project.
+No license file is included in this repository. 
 
 Credits:
 - Built with Next.js, TypeScript and Tailwind CSS.
@@ -126,5 +126,3 @@ Credits:
 ## Contact
 Repository owner: MANYA-SHUKLA  
 Repo URL: https://github.com/MANYA-SHUKLA/codyssey-main-website-live
-
-If you want any improvements to this README (custom scripts, environment variables list, screenshots, or more detailed developer setup), tell me what to include and I’ll update it.
