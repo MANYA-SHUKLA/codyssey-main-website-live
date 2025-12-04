@@ -57,10 +57,8 @@ a {
   background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
-/* Global spacing so fixed navbar doesn’t overlap content */
-
 @media (max-width: 768px) {
   main {
-    padding-top: 40px; /* more space on mobile */
+    padding-top: 40px; 
   }
 }
