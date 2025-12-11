@@ -71,7 +71,7 @@ const TeamSection = () => {
           {
       name: 'Faizan Khan',
       role: 'Software Engineer',
-      image: 'https://rajkumaryogi.vercel.app/static/media/Photo_Pass.54eb909dfcd512176872.JPG',
+      image: 'https://avatars.githubusercontent.com/u/122879780?v=4',
       description: 'Detail-oriented Developer with hands-on experience in modern tools, frameworks, and engineering best practices.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
