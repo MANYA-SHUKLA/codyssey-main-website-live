@@ -68,6 +68,19 @@ const TeamSection = () => {
         github: 'https://github.com/nvverma8'
       }
     },
+          {
+      name: 'Faizan Khan',
+      role: 'Software Engineer',
+      image: 'https://rajkumaryogi.vercel.app/static/media/Photo_Pass.54eb909dfcd512176872.JPG',
+      description: 'Detail-oriented Developer with hands-on experience in modern tools, frameworks, and engineering best practices.',
+      skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/nikhil-verma-1b1bb8227/',
+        portfolio: 'https://rajkumaryogi.vercel.app/',
+        github: 'https://github.com/khanfaiz0'
+      }
+    },
   ];
 
   return (
