@@ -63,9 +63,9 @@ const TeamSection = () => {
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
-        linkedin: 'https://www.linkedin.com/in/rajkumaryogi-jnu/',
+        linkedin: 'https://www.linkedin.com/in/nikhil-verma-1b1bb8227/',
         portfolio: 'https://rajkumaryogi.vercel.app/',
-        github: 'https://github.com/Rajkumaryogi'
+        github: 'https://github.com/nvverma8'
       }
     },
   ];
