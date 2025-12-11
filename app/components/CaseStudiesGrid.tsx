@@ -45,7 +45,7 @@ const CaseStudiesGrid = () => {
       id: 'freelancer-wala-project',
       title: 'Freelancer Wala – Work-From-Home Telecalling Platform',
       description: 'A high-conversion telecalling recruitment and training platform empowering India with flexible work-from-home opportunities.',
-      image: 'https://img.freepik.com/free-photo/people-working-call-center_23-2149288184.jpg?semt=ais_hybrid&w=740&q=80',
+      image: 'https://i.pinimg.com/564x/d5/e8/aa/d5e8aa2eeb313af69c4bd95ea293be29.jpg',
       industry: 'Work-From-Home & Telecalling',
       duration: '1 week',
       results: ['+70% Registration Growth', '+55% User Engagement', 'Strong Trust Uplift', 'Faster Onboarding'],
