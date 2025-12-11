@@ -149,6 +149,47 @@ export const caseStudies: CaseStudy[] = [
     'https://panoramicadvertising.in/wp-content/uploads/2024/07/Untitled-design-16.jpg'
   ],
   gradient: 'linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'
+},
+  {
+  "id": "freelancer-wala-project",
+  "title": "Freelancer Wala – Work-From-Home Telecalling Platform",
+  "description": "A modern, high-conversion telecalling recruitment and training platform designed to empower individuals across India with flexible work-from-home telecalling opportunities.",
+  "overview": "Freelancer Wala needed a professional digital presence to showcase its work-from-home telecalling model, employment ecosystem, and support-first approach. The platform highlights training, flexible schedules, inclusivity, community support, and zero-fee employment opportunities for women, men, and students across India.",
+  "problem": "Freelancer Wala had detailed information about its telecalling services, but no structured, modern, or trustworthy online identity. The lack of a professional website affected credibility, lead conversions, and the ability to clearly present roles, benefits, and training structure to job seekers.",
+  "approach": "We designed a clean, trust-driven, and conversion-optimized website using Next.js, TypeScript, and Tailwind CSS. The site organizes the entire telecalling journey—training, opportunities, benefits, growth paths, and success stories—into easy-to-read, powerful sections. A responsive UI, strong visuals, onboarding flow, and clear CTAs make the website intuitive and aspirational.",
+  "image": "https://img.freepik.com/free-photo/people-working-call-center_23-2149288184.jpg?semt=ais_hybrid&w=740&q=80",
+  "industry": "Work-From-Home & Telecalling Services",
+  "duration": "1 week",
+  "team": ["Project Manager", "UI/UX Designer", "Frontend Developer"],
+  "results": {
+    "Registration Growth": "+70% Increase",
+    "User Engagement": "+55% Improvement",
+    "Trust & Credibility": "Strong Positive Uplift",
+    "Onboarding Efficiency": "Faster Training Adoption"
+  },
+  "techStack": {
+    "frontend": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "backend": ["Nodemailer"],
+    "tools": ["Figma", "Vercel", "Hostinger"]
+  },
+  "challenges": [
+    "Large volume of content without structured formatting",
+    "Needed a trustworthy brand presentation for job seekers",
+    "Difficulty explaining training, roles, and benefits clearly",
+    "Building credibility in a highly competitive telecalling industry"
+  ],
+  "solutions": [
+    "Created a modern recruitment-focused UI with strong CTAs",
+    "Structured entire content into clear sections: training, roles, benefits, success stories",
+    "Added clear credibility markers like numbers, testimonials, and guarantees",
+    "Designed a fully mobile-responsive interface with optimized UX"
+  ],
+  "gallery": [
+    "https://media.licdn.com/dms/image/v2/D4D12AQFtrBWncjMObw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1683698440618?e=2147483647&v=beta&t=gkrCCx8ApcewnVt_ZJZU6Q-e0sHALrvR4VXGdp-P7gk",
+    "https://neodove.com/wp-content/uploads/2023/02/Why-is-Telecalling-important-for-your-business-1.jpg",
+    "https://callyzer.co/blog/media/posts/31/10-industries-that-benefit-most-from-telecalling-banner.webp"
+  ],
+  "gradient": "linear-gradient(135deg, #ff6a88 0%, #ff9a44 100%)"
 }
-  
+
 ];

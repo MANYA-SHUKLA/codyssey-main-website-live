@@ -32,10 +32,20 @@ const FeaturedCaseStudies = () => {
   image: 'https://www.flatworldsolutions.com/featured-images/success-story-telecalling-lead-generation-services.jpg',
   category: 'Business Services',
   results: ['+200% Engagement', 'Faster Lead Inquiry Flow'],
-  gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', // Option B
-  link: 'https://www.telewaveservices.com/'
-}
-    // Add more case studies as needed
+  gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+   link: 'https://www.telewaveservices.com/'
+ },
+    {
+      id: 'freelancer-wala-project',
+      title: 'Freelancer Wala – Work-From-Home Telecalling Platform',
+      description: 'A high-conversion telecalling recruitment and training platform empowering India with flexible work-from-home opportunities.',
+      image: 'https://callyzer.co/blog/media/posts/25/telecalling-skills-customer-support-xl-2.webp',
+      category: 'Work-From-Home & Telecalling',
+      results: ['+70% Registration Growth', '+55% User Engagement', 'Strong Trust Uplift', 'Faster Onboarding'],
+      gradient: 'linear-gradient(135deg, #ff6a88 0%, #ff9a44 100%)',
+      link: 'https://freelancerwala.com/'
+    },
+
 
   ];
 
