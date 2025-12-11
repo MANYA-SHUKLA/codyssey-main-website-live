@@ -58,13 +58,13 @@ const TeamSection = () => {
        {
       name: 'Nikhil Verma',
       role: 'Software Engineer',
-      image: 'https://rajkumaryogi.vercel.app/static/media/Photo_Pass.54eb909dfcd512176872.JPG',
+      image: 'https://media.licdn.com/dms/image/v2/C4D03AQE4fyrNFABRhg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1652577601641?e=1767225600&v=beta&t=W9erLd3f7-JcA3DVcLZfaKyGnapy4LgH2SDergOF24g',
       description: 'Detail-oriented Developer with hands-on experience in modern tools, frameworks, and engineering best practices.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
         linkedin: 'https://www.linkedin.com/in/nikhil-verma-1b1bb8227/',
-        portfolio: 'https://rajkumaryogi.vercel.app/',
+        portfolio: 'https://nikhilverma.vercel.app/',
         github: 'https://github.com/nvverma8'
       }
     },
@@ -72,12 +72,12 @@ const TeamSection = () => {
       name: 'Faizan Khan',
       role: 'Software Engineer',
       image: 'https://avatars.githubusercontent.com/u/122879780?v=4',
-      description: 'Detail-oriented Developer with hands-on experience in modern tools, frameworks, and engineering best practices.',
+      description: 'Software Engineer focused on scalable architecture, optimized performance, and industry-standard practices.',
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
-        linkedin: 'https://www.linkedin.com/in/nikhil-verma-1b1bb8227/',
-        portfolio: 'https://rajkumaryogi.vercel.app/',
+        linkedin: 'https://www.linkedin.com/in/faizan-khan-123456/',
+        portfolio: 'https://faizan-khan.vercel.app/',
         github: 'https://github.com/khanfaiz0'
       }
     },
