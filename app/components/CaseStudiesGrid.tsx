@@ -14,7 +14,7 @@ const CaseStudiesGrid = () => {
       description: 'A comprehensive website for Foodiess Cafe with online booking, menu management, and customer reviews.',
       image: 'https://www.foodiescafe.shop/cozy-interior.jpg',
       industry: 'Cafes',
-      duration: '2 weeks',
+      duration: '1 weeks',
       results: ['+300% Efficiency', '99.9% Uptime', '+200 Orders/Day'],
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       link: 'https://www.foodiescafe.shop/'
