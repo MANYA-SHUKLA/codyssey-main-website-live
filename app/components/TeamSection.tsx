@@ -38,7 +38,6 @@ const TeamSection = () => {
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
       social: {
         linkedin: 'https://www.linkedin.com/in/afreedaasad',
-        portfolio: '#',
         github: 'https://github.com/afridaasad'
       }
     },
@@ -75,7 +74,7 @@ const TeamSection = () => {
       skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
-        linkedin: 'https://www.linkedin.com/in/faizan-khan-123456/',
+        linkedin: 'https://www.linkedin.com/in/faizan-khan-developer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         github: 'https://github.com/khanfaiz0'
       }
     },
