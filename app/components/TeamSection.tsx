@@ -55,6 +55,19 @@ const TeamSection = () => {
         github: 'https://github.com/Rajkumaryogi'
       }
     },
+       {
+      name: 'Nikhil Verma',
+      role: 'Software Engineer',
+      image: 'https://rajkumaryogi.vercel.app/static/media/Photo_Pass.54eb909dfcd512176872.JPG',
+      description: 'Detail-oriented Developer with hands-on experience in modern tools, frameworks, and engineering best practices.',
+      skills: ['Frontend', 'Backend', 'Database', 'Deployment'],
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/rajkumaryogi-jnu/',
+        portfolio: 'https://rajkumaryogi.vercel.app/',
+        github: 'https://github.com/Rajkumaryogi'
+      }
+    },
   ];
 
   return (
