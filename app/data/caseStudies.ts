@@ -150,6 +150,5 @@ export const caseStudies: CaseStudy[] = [
   ],
   gradient: 'linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'
 }
-
   
 ];
