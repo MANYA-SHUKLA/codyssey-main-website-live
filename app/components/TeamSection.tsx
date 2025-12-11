@@ -64,7 +64,6 @@ const TeamSection = () => {
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
         linkedin: 'https://www.linkedin.com/in/nikhil-verma-1b1bb8227/',
-        portfolio: 'https://nikhilverma.vercel.app/',
         github: 'https://github.com/nvverma8'
       }
     },
@@ -77,7 +76,6 @@ const TeamSection = () => {
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       social: {
         linkedin: 'https://www.linkedin.com/in/faizan-khan-123456/',
-        portfolio: 'https://faizan-khan.vercel.app/',
         github: 'https://github.com/khanfaiz0'
       }
     },
