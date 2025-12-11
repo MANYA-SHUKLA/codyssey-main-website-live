@@ -23,25 +23,35 @@ const CaseStudiesGrid = () => {
       id: 'campaign-wala-project',
       title: 'Campaign Wala Project',
       description: 'Developed a comprehensive campaign management system with real-time analytics and reporting.',
-       image: 'casestudies/CW.jpeg',
+      image: 'casestudies/CW.jpeg',
       industry: 'SaaS Application',
       duration: '7 weeks',
-    results: ['+300% Efficiency', '99.9% Uptime'],
+      results: ['+300% Efficiency', '99.9% Uptime'],
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       link: 'https://www.campaignwala.in/'
     },
     {
-  id: 'telewave-services-project',
-  title: 'Telewave Services – Business Website',
-  description: 'A modern business website for a communication and telecalling talent company.',
-  image: 'https://www.flatworldsolutions.com/featured-images/success-story-telecalling-lead-generation-services.jpg',
-  industry: 'Business Services',
-  duration: '1 week',
-  results: ['+200% Engagement', 'Optimised Inquiry Flow'],
-  gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-  link: 'https://www.telewaveservices.com'
-}
-    // Add more case studies as needed
+      id: 'telewave-services-project',
+      title: 'Telewave Services – Business Website',
+      description: 'A modern business website for a communication and telecalling talent company.',
+      image: 'https://www.flatworldsolutions.com/featured-images/success-story-telecalling-lead-generation-services.jpg',
+      industry: 'Business Services',
+      duration: '1 week',
+      results: ['+200% Engagement', 'Optimised Inquiry Flow'],
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      link: 'https://www.telewaveservices.com'
+    },
+    {
+      id: 'freelancer-wala-project',
+      title: 'Freelancer Wala – Work-From-Home Telecalling Platform',
+      description: 'A high-conversion telecalling recruitment and training platform empowering India with flexible work-from-home opportunities.',
+      image: 'https://img.freepik.com/free-photo/people-working-call-center_23-2149288184.jpg?semt=ais_hybrid&w=740&q=80',
+      industry: 'Work-From-Home & Telecalling',
+      duration: '1 week',
+      results: ['+70% Registration Growth', '+55% User Engagement', 'Strong Trust Uplift', 'Faster Onboarding'],
+      gradient: 'linear-gradient(135deg, #ff6a88 0%, #ff9a44 100%)',
+      link: 'https://freelancerwala.com/'
+    }
   ];
 
   const industries = ['all', 'Cafes', 'SaaS Application', 'Business Services'];
