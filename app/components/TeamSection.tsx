@@ -29,7 +29,6 @@ const TeamSection = () => {
         github: 'https://github.com/MANYA-SHUKLA'
       }
     },
-    },
       {
       name: 'Rajkumar Yogi',
       role: 'Software Engineer',
