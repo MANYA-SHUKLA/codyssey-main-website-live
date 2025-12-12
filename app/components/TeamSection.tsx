@@ -29,17 +29,6 @@ const TeamSection = () => {
         github: 'https://github.com/MANYA-SHUKLA'
       }
     },
-    {
-      name: 'Afreeda Asad',
-      role: ' Software Engineer & QA Analyst',
-   image: '/assets/teams/afreeda.jpg',
-      description: 'Testing specialist with expertise in frontend development and user experience design. Creates beautiful, functional interfaces.',
-      skills: ['Testing', 'UI/UX', 'Frontend', 'Quality Assurance'],
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/afreedaasad',
-        github: 'https://github.com/afridaasad'
-      }
     },
       {
       name: 'Rajkumar Yogi',
