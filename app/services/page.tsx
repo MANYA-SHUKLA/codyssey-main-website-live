@@ -5,7 +5,6 @@ import ServiceProcess from '../components/ServiceProcess';
 import ServiceTools from '../components/ServiceTools';
 import ServiceFAQ from '../components/ServiceFAQ';
 import ServiceCTA from '../components/ServiceCTA';
-
 export default function Services() {
   return (
     <main>
