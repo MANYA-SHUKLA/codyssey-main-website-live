@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import './AboutHero.css';
-
 const AboutHero = () => {
   return (
     <section className="about-hero">
