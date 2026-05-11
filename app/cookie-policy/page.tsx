@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import '../components/CookiePolicy.css';
-
 const CookiePolicy = () => {
   const handleAcceptAll = () => {
  
