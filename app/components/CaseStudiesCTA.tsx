@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import './CaseStudiesCTA.css';
-
 const CaseStudiesCTA = () => {
   return (
     <section className="case-studies-cta-section">
