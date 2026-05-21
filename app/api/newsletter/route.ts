@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
                   <p><strong>Subscription Date:</strong> ${new Date().toLocaleDateString()}</p>
                   <p><strong>Subscription Time:</strong> ${new Date().toLocaleTimeString()}</p>
                 </div>
-                
+              
                 <div class="stats">
                   <h3>Welcome to the CODYSSEY Community! 🚀</h3>
                   <p>This subscriber will now receive your latest updates on web development, design trends, and digital innovation.</p>
