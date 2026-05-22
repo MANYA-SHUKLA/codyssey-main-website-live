@@ -1,6 +1,5 @@
 import CaseStudyDetail from '../../components/CaseStudyDetail';
 import { caseStudies } from '../../data/caseStudies';
-
 export async function generateStaticParams() {
   return caseStudies.map((study) => ({
     id: study.id,
