@@ -4,7 +4,6 @@ import Link from 'next/link';
 import '../components/CookiePolicy.css';
 const CookiePolicy = () => {
   const handleAcceptAll = () => {
-
     console.log('All cookies accepted');
   };
 
