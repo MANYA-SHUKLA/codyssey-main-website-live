@@ -5,7 +5,6 @@ export async function generateStaticParams() {
     id: study.id,
   }));
 }
-
 interface PageProps {
   params: Promise<{
     id: string;
