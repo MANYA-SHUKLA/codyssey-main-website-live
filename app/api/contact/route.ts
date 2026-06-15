@@ -11,7 +11,6 @@ export async function POST(request: NextRequest) {
         pass: process.env.EMAIL_PASS,
       },
     });
-
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
       to: 'info@codyssey.services',
