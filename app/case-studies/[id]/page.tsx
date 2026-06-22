@@ -10,7 +10,6 @@ interface PageProps {
     id: string;
   }>;
 }
-
 export default async function CaseStudyPage({ params }: PageProps) {
   const { id } = await params;
   const study = caseStudies.find(s => s.id === id);
